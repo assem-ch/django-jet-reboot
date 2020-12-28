@@ -1,5 +1,5 @@
 {
-  "name": "django-jet",
+  "name": "django-jet-reboot",
   "devDependencies": {
     "autoprefixer": "6.4.0",
     "browserify": "13.0.1",

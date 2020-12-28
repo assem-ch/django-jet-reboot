@@ -43,7 +43,7 @@ Installation
 
 .. code:: python
 
-    pip install git+git://github.com/b1go/django-jet-reboot.git
+    pip install django-jet-reboot
 
 
 * Add 'jet' application to the INSTALLED_APPS setting of your Django project settings.py file (note it should be before 'django.contrib.admin'):
