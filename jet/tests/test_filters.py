@@ -4,10 +4,8 @@ from django.utils.encoding import smart_text
 from jet.filters import RelatedFieldAjaxListFilter
 from jet.tests.models import RelatedToTestModel, TestModel
 
-try:
-    from django.contrib.admin.utils import get_fields_from_path
-except ImportError: # Django 1.6
-    from django.contrib.admin.util import get_fields_from_path
+
+from django.contrib.admin.utils import get_fields_from_path
 
 
 class FiltersTestCase(TestCase):
