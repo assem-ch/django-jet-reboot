@@ -1,6 +1,8 @@
 *.pyc
 *.DS_Store
 *.egg*
+venv/
+build/
 /dist/
 /.idea
 /docs/_build/

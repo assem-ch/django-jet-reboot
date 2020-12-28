@@ -1,45 +1,18 @@
-==========
-Django JET
-==========
+=================
+Django JET Reboot
+=================
+** Modern template for Django admin interface with improved functionality**
 
-.. image:: https://travis-ci.org/geex-arts/django-jet.svg?branch=master
-    :target: https://travis-ci.org/geex-arts/django-jet
-
-**Modern template for Django admin interface with improved functionality**
-
-+-----------------------------------------------------------------------------------------------------------------------------------+
-| Attention! **NEW JET**                                                                                                            |
-+===================================================================================================================================+
-| **We are proud to announce completely new Jet. Please check out Live Demo.**                                                      |
-|                                                                                                                                   |
-| Developing of new features for Django Jet will be frozen, only critical bugs will be fixed.                                       |
-+-----------------------------------------------------------------------------------------------------------------------------------+
-| `Live Demo <https://github.com/jet-admin/jet-bridge>`_                                                                            |
-+-----------------------------------------------------------------------------------------------------------------------------------+
+** Continuing the work on the original django-jet that gets discontinued
 
 
-Django JET has two kinds of licenses: open-source (AGPLv3) and commercial. Please note that using AGPLv3
-code in your programs make them AGPL compatible too. So if you don't want to comply with that we can provide you a commercial
-license (visit Home page). The commercial license is designed for using Django JET in commercial products
-and applications without the provisions of the AGPLv3.
+(Not available yet)
+* Documentation: http://jet-reboot.readthedocs.org/
+* PyPI: https://pypi.python.org/pypi/django-jet-reboot
 
-.. image:: https://raw.githubusercontent.com/geex-arts/jet/static/logo.png
-    :width: 500px
-    :height: 500px
-    :scale: 50%
-    :alt: Logo
-    :align: center
-    
-* Home page: http://jet.geex-arts.com/
-* **New Jet**: `Live Demo <https://app.jetadmin.io/demo?utm_source=jet&utm_medium=banner&utm_campaign=github&utm_content=link&utm_term=promo>`_
-* Live Demo: http://demo.jet.geex-arts.com/admin/
-* Documentation: http://jet.readthedocs.org/
-* libi.io http://libi.io/library/1683/django-jet
-* PyPI: https://pypi.python.org/pypi/django-jet
-* Support: support@jet.geex-arts.com
 
-Why Django JET?
-===============
+Why Django JET Reboot?
+======================
 
 * New fresh look
 * Responsive mobile interface
@@ -71,13 +44,12 @@ Screenshots
 Installation
 ============
 
-* Download and install latest version of Django JET:
+* Download and install latest version of Django JET Reboot:
 
 .. code:: python
 
-    pip install django-jet
-    # or
-    easy_install django-jet
+    pip install django-jet-reboot
+
 
 * Add 'jet' application to the INSTALLED_APPS setting of your Django project settings.py file (note it should be before 'django.contrib.admin'):
 
@@ -135,8 +107,6 @@ Installation
 .. code:: python
 
     python manage.py migrate jet
-    # or 
-    python manage.py syncdb
         
 * Collect static if you are in production environment:
 
