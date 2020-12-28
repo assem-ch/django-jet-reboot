@@ -9,7 +9,7 @@ from django.utils.translation import ugettext_lazy as _
 class Bookmark(models.Model):
     url = models.URLField(verbose_name=_('URL'))
     title = models.CharField(verbose_name=_('title'), max_length=255)
-    user = models.PositiveIntegerField(verbose_name=_('user'))
+    user = models.ForeignKey(to=get_user_model(),on_delete=models.SET_NULL, null=True, verbose_name=_('user'))
     date_add = models.DateTimeField(verbose_name=_('date created'), default=timezone.now)
 
     class Meta:
