@@ -1,5 +1,5 @@
 try:
-    from django.core.management.base import NoArgsCommand
+    from django.core.management.base import NoArgsCommand, CommandError
 except ImportError:
     from django.core.management import BaseCommand as NoArgsCommand
 
