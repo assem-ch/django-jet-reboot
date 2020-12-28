@@ -7,6 +7,7 @@ Django JET Reboot
 
 
 (Not available yet)
+
 * Documentation: http://jet-reboot.readthedocs.org/
 * PyPI: https://pypi.python.org/pypi/django-jet-reboot
 
