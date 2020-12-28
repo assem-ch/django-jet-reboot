@@ -32,7 +32,7 @@ def get_install_requires():
     return install_requires
 
 setup(
-    name='django-jet-reboot',
+    name='django-jet',
     version=__import__('jet').VERSION,
     description='Modern template for Django admin interface with improved functionality',
     long_description=read('README.rst'),
