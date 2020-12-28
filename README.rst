@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.com/b1go/django-jet-reboot.svg?branch=master
+    :target: https://travis-ci.com/b1go/django-jet-reboot
+    
 =================
 Django JET Reboot
 =================
