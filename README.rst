@@ -6,7 +6,7 @@ Django JET Reboot
 =================
 ** Modern template for Django admin interface with improved functionality**
 
-** Continuing the work on the original django-jet that gets discontinued
+** Supporting only django > 3.0 & Python > 3.5
 
 
 Why Django JET?
