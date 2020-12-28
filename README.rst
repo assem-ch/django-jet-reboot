@@ -6,13 +6,7 @@ Django JET Reboot
 ** Continuing the work on the original django-jet that gets discontinued
 
 
-(Not available yet)
-
-* Documentation: http://jet-reboot.readthedocs.org/
-* PyPI: https://pypi.python.org/pypi/django-jet-reboot
-
-
-Why Django JET Reboot?
+Why Django JET?
 ======================
 
 * New fresh look
@@ -49,7 +43,7 @@ Installation
 
 .. code:: python
 
-    pip install django-jet-reboot
+    pip install git+git://github.com/b1go/django-jet-reboot.git
 
 
 * Add 'jet' application to the INSTALLED_APPS setting of your Django project settings.py file (note it should be before 'django.contrib.admin'):
@@ -81,16 +75,6 @@ Installation
         },
     ]
 
-.. warning::
-    Before Django 1.8 you should specify context processors different way. Also use ``django.core.context_processors.request`` instead of ``django.template.context_processors.request``.
-
-    .. code:: python
-
-        from django.conf import global_settings
-
-        TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
-            'django.core.context_processors.request',
-        )
 
 * Add URL-pattern to the urlpatterns of your Django project urls.py file (they are needed for related–lookups and autocompletes):
 
@@ -158,8 +142,7 @@ Dashboard installation
 .. code:: python
 
     python manage.py migrate dashboard
-    # or
-    python manage.py syncdb
+
 
 * Collect static if you are in production environment:
 

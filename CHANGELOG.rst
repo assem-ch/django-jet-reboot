@@ -1,5 +1,9 @@
 Changelog
 =========
+1.1.0
+-----
+* Django 3.0 compatibility
+* Fix case when User has a non integer ID
 
 1.0.8
 -----
