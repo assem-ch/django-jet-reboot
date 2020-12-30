@@ -24,6 +24,15 @@ class FiltersTestCase(TestCase):
 
         return field, lookup_params, model, model_admin, field_path
 
+    def get_related_field_ajax_list_filter_params_with_initial(self):
+        model = RelatedToTestModel
+        field_path = 'field'
+        field = get_fields_from_path(model, field_path)[-1]
+        lookup_params = {'field__id__exact':2}
+        model_admin = admin.site._registry.get(model)
+
+        return field, lookup_params, model, model_admin, field_path
+
     def test_related_field_ajax_list_filter(self):
         request = self.factory.get('url')
         field, lookup_params, model, model_admin, field_path = self.get_related_field_ajax_list_filter_params()
@@ -39,7 +48,7 @@ class FiltersTestCase(TestCase):
     def test_related_field_ajax_list_filter_with_initial(self):
         initial = self.models[1]
         request = self.factory.get('url', {'field__id__exact': initial.pk})
-        field, lookup_params, model, model_admin, field_path = self.get_related_field_ajax_list_filter_params()
+        field, lookup_params, model, model_admin, field_path = self.get_related_field_ajax_list_filter_params_with_initial()
         list_filter = RelatedFieldAjaxListFilter(field, request, lookup_params, model, model_admin, field_path)
 
         self.assertTrue(list_filter.has_output())

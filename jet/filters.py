@@ -6,15 +6,10 @@ try:
 except ImportError: # Django 1.11
     from django.urls import reverse
 
-try:
-    from django.contrib.admin.utils import get_model_from_relation
-except ImportError: # Django 1.6
-    from django.contrib.admin.util import get_model_from_relation
 
-try:
-    from django.forms.utils import flatatt
-except ImportError: # Django 1.6
-    from django.forms.util import flatatt
+from django.contrib.admin.utils import get_model_from_relation
+from django.forms.utils import flatatt
+
 
 
 class RelatedFieldAjaxListFilter(RelatedFieldListFilter):
@@ -25,7 +20,7 @@ class RelatedFieldAjaxListFilter(RelatedFieldListFilter):
         return True
 
     def field_choices(self, field, request, model_admin):
-        model = field.remote_field.model if hasattr(field, 'remote_field') else field.related_field.model
+        model = field.remote_field.model
         app_label = model._meta.app_label
         model_name = model._meta.object_name
 
