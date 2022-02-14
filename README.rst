@@ -1,4 +1,4 @@
-.. image:: https://github.com/assem-ch/django-jet-reboot/actions/workflows/test/badge.svg
+.. image:: https://github.com/assem-ch/django-jet-reboot/actions/workflows/tests.yml/badge.svg
 
 
 
