@@ -1,5 +1,10 @@
 Changelog
 =========
+
+1.2.0
+-----
+* Django 4.0 compatibility
+
 1.1.0
 -----
 * Django 3.0 compatibility
