@@ -46,4 +46,8 @@ jobs:
 
     - name: Run Tests
       run: |
-        python manage.py test
+        coverage run --source=jet --omit=*/migrations/*,*/south_migrations/*,*/tests/* python manage.py test
+    - name: Coverage report
+      run: |
+        coverage report
+        coveralls
