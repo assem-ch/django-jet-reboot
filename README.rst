@@ -1,6 +1,5 @@
-.. image:: https://travis-ci.com/b1go/django-jet-reboot.svg?branch=master
-    :target: https://travis-ci.com/b1go/django-jet-reboot
-    
+.. image:: https://github.com/assem-ch/django-jet-reboot/actions/workflows/test/badge.svg
+
 =================
 Django JET Reboot
 =================
