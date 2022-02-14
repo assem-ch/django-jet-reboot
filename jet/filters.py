@@ -1,5 +1,5 @@
 from django.contrib.admin import RelatedFieldListFilter
-from django.utils.encoding import smart_text
+from django.utils.encoding import smart_str
 from django.utils.html import format_html
 try:
     from django.core.urlresolvers import reverse
@@ -41,7 +41,7 @@ class RelatedFieldAjaxListFilter(RelatedFieldListFilter):
             rel_name = other_model._meta.pk.name
 
         queryset = model._default_manager.filter(**{rel_name: self.lookup_val}).all()
-        return [(x._get_pk_val(), smart_text(x)) for x in queryset]
+        return [(x._get_pk_val(), smart_str(x)) for x in queryset]
 
 
 try:

@@ -1,5 +1,5 @@
 import django
-from django.conf.urls import url
+from django.urls import re_path
 
 try:
     from django.views.i18n import JavaScriptCatalog
@@ -13,27 +13,27 @@ from jet.views import add_bookmark_view, remove_bookmark_view, toggle_applicatio
 app_name = 'jet'
 
 urlpatterns = [
-    url(
+    re_path(
         r'^add_bookmark/$',
         add_bookmark_view,
         name='add_bookmark'
     ),
-    url(
+    re_path(
         r'^remove_bookmark/$',
         remove_bookmark_view,
         name='remove_bookmark'
     ),
-    url(
+    re_path(
         r'^toggle_application_pin/$',
         toggle_application_pin_view,
         name='toggle_application_pin'
     ),
-    url(
+    re_path(
         r'^model_lookup/$',
         model_lookup_view,
         name='model_lookup'
     ),
-    url(
+    re_path(
         r'^jsi18n/$',
         javascript_catalog,
         {'packages': 'django.contrib.admin+jet'},
