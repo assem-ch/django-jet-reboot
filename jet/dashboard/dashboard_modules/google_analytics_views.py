@@ -1,7 +1,7 @@
 try:
     from django.core.urlresolvers import reverse
 except ImportError: # Django 1.11
-    from django.urls import reverse
+    from django.urls import reverse, re_path
 
 from django.urls import re_path
 from django.contrib import messages

@@ -1,7 +1,7 @@
 Contributing
 ============
 
-Django JET is open-source and every member of the community can contribute to it. We are happy to see patches
+Django JET reboot is open-source and every member of the community can contribute to it. We are happy to see patches
 and improvements with Django JET. But please keep in mind that there are some guidelines you should follow.
 
 .. _requirements:

@@ -177,7 +177,7 @@ class LinkList(DashboardModule):
 
     .. code-block:: python
 
-        from django.utils.translation import ugettext_lazy as _
+        from django.utils.translation import gettext_lazy as _
         from jet.dashboard import modules
         from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
 
@@ -278,7 +278,7 @@ class AppList(DashboardModule):
 
     .. code-block:: python
 
-        from django.utils.translation import ugettext_lazy as _
+        from django.utils.translation import gettext_lazy as _
         from jet.dashboard import modules
         from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
 
@@ -351,7 +351,7 @@ class ModelList(DashboardModule):
 
     .. code-block:: python
 
-        from django.utils.translation import ugettext_lazy as _
+        from django.utils.translation import gettext_lazy as _
         from jet.dashboard import modules
         from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
 
@@ -425,7 +425,7 @@ class RecentActions(DashboardModule):
 
     .. code-block:: python
 
-        from django.utils.translation import ugettext_lazy as _
+        from django.utils.translation import gettext_lazy as _
         from jet.dashboard import modules
         from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
 
@@ -533,7 +533,7 @@ class Feed(DashboardModule):
 
     .. code-block:: python
 
-        from django.utils.translation import ugettext_lazy as _
+        from django.utils.translation import gettext_lazy as _
         from jet.dashboard import modules
         from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
 
