@@ -6,9 +6,9 @@
 =================
 Django JET Reboot
 =================
-Rebooting the original project : `django-jet <https://github.com/geex-arts/django-jet>`_. Django Jet is modern template for Django admin interface with improved functionality.
+Django Jet Reboot is modern template for Django admin interface with improved functionality. Rebooting the original project : `django-jet <https://github.com/geex-arts/django-jet>`_.
 
-We can't support old versions. We focus only on django >= 3.0 & Python >= 3.7.
+We focus only on django >= 3.0 & Python >= 3.7. We can't support old versions.
 
 
 Why Django JET?
