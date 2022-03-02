@@ -1,11 +1,11 @@
-==========
-Django JET
-==========
+=================
+Django JET Reboot
+=================
 
 About
 =====
 
-**Modern template for Django admin interface with improved functionality**
+**Modern template for Django admin interface with improved functionality**. A fork of `django-jet` to support django 3 and 4. 
 
 .. image:: https://raw.githubusercontent.com/geex-arts/jet/static/logo.png
     :width: 500px
@@ -28,22 +28,14 @@ Contents
 License
 =======
 
-Django JET has two kinds of licenses: open-source (AGPLv3) and commercial. Please note that using AGPLv3
-code in your programs make them AGPL compatible too. So if you don't want to comply with that we can provide you
-a commercial license (visit Home page). The commercial license is designed for using Django JET in commercial products
-and applications without the provisions of the AGPLv3.
+Django JET  reboot has one license: open-source (AGPLv3). Please note that using AGPLv3
+code in your programs make them AGPL compatible too. 
 
 Resources
 =========
 
-* Home page: http://jet.geex-arts.com/
-* **Live Demo**: http://demo.jet.geex-arts.com/admin/
-* libi.io http://libi.io/library/1683/django-jet
-* PyPI: https://pypi.python.org/pypi/django-jet
-* Support: support@jet.geex-arts.com
+* PyPI: https://pypi.python.org/pypi/django-jet-reboot
 
-.. image:: https://travis-ci.org/geex-arts/django-jet.svg?branch=master
-    :target: https://travis-ci.org/geex-arts/django-jet
 
 Screenshots
 ===========
