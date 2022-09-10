@@ -222,7 +222,7 @@ class LinkList(DashboardModule):
     #: Links are contained in ``children`` attribute which you can pass as constructor parameter
     #: to make your own preinstalled link lists.
     #:
-    #: ``children`` is an array of dictinaries::
+    #: ``children`` is an array of dictionaries::
     #:
     #:     [
     #:          {
