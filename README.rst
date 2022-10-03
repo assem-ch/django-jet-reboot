@@ -1,7 +1,7 @@
 .. image:: https://github.com/assem-ch/django-jet-reboot/actions/workflows/tests.yml/badge.svg
 
 
-*Note*: *More collaborators are needed to maintain the project, feel free to contact @assem-ch.*
+**Note**: More collaborators are needed to maintain the project, feel free to contact `@assem-ch <https://github.com/assem-ch>`_.
 
 
 =======================================
