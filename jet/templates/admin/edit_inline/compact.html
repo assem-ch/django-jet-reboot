@@ -4,17 +4,19 @@
     <h2>{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</h2>
     {{ inline_admin_formset.formset.management_form }}
     {{ inline_admin_formset.formset.non_form_errors }}
-
     <div class="inline-navigation">
         <div class="inline-navigation-top"></div>
         <div class="inline-navigation-bottom"></div>
-        <div class="add-row">
-            <a href="#">{% blocktrans with verbose_name=inline_admin_formset.opts.verbose_name|capfirst %}Add another {{ verbose_name }}{% endblocktrans %}</a>
-        </div>
+
+        {% if inline_admin_formset.has_add_permission %}
+	        <div class="add-row">
+	            <a href="#">{% blocktrans with verbose_name=inline_admin_formset.opts.verbose_name|capfirst %}Add another {{ verbose_name }}{% endblocktrans %}</a>
+	        </div>
+        {% endif %}
         <div class="inline-navigation-content">
             <div class="inline-navigation-items">
                 {% for inline_admin_form in inline_admin_formset %}
-                    <a href="#" class="inline-navigation-item{% if forloop.last %} empty{% endif %}" data-inline-related-id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
+                    <a href="#" class="inline-navigation-item{% if forloop.last and inline_admin_formset.has_add_permission %} empty{% endif %}" data-inline-related-id="{{ inline_admin_formset.formset.prefix }}-{% if forloop.last and inline_admin_formset.has_add_permission %}empty{% else %}{{ forloop.counter0 }}{% endif %}">
                         {% if inline_admin_form.original %}
                             {{ inline_admin_form.original }}
                         {% else %}
@@ -27,7 +29,7 @@
     </div>
 
     {% for inline_admin_form in inline_admin_formset %}
-        <div class="inline-related compact{% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last %} empty-form last-related{% endif %}" id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
+        <div class="inline-related compact{% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last and inline_admin_formset.has_add_permission %} empty-form last-related{% endif %}" id="{{ inline_admin_formset.formset.prefix }}-{% if forloop.last and inline_admin_formset.has_add_permission %}empty{% else %}{{ forloop.counter0 }}{% endif %}">
             <h3>
                 <b>{{ inline_admin_formset.opts.verbose_name|capfirst }}:</b>&nbsp;
                 <span class="inline_label">
