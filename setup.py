@@ -20,11 +20,6 @@ def get_install_requires():
         install_requires.append('importlib')
 
     try:
-        import six
-    except ImportError:
-        install_requires.append('six')
-
-    try:
         from collections import OrderedDict
     except ImportError:
         install_requires.append('ordereddict')
