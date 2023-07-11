@@ -1,11 +1,9 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils import timezone
-from six import python_2_unicode_compatible
 from django.utils.translation import gettext_lazy as _
 
 
-@python_2_unicode_compatible
 class Bookmark(models.Model):
     url = models.URLField(verbose_name=_('URL'))
     title = models.CharField(verbose_name=_('title'), max_length=255)
@@ -21,7 +19,6 @@ class Bookmark(models.Model):
         return self.title
 
 
-@python_2_unicode_compatible
 class PinnedApplication(models.Model):
     app_label = models.CharField(verbose_name=_('application name'), max_length=255)
     user = models.ForeignKey(to=get_user_model(),on_delete=models.SET_NULL, null=True, verbose_name=_('user'))
