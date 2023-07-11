@@ -1,5 +1,6 @@
 import datetime
 import json
+from collections import OrderedDict
 from django.template import Context
 from django.utils import translation
 from jet import settings
@@ -29,11 +30,6 @@ from django.contrib.admin.options import IncorrectLookupParameters
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from django.utils.text import slugify
-
-try:
-    from collections import OrderedDict
-except ImportError:
-    from ordereddict import OrderedDict  # Python 2.6
 
 
 class JsonResponse(HttpResponse):
