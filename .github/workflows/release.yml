@@ -24,6 +24,6 @@ jobs:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        sed -i "s/version=v[0-9a-zA-Z.]\{1,\}/VERSION='$(echo ${GITHUB_REF:10})'/g" jet/__init__.py
+        sed -i "s/VERSION='[0-9a-zA-Z.]\{1,\}'/VERSION='$(echo ${GITHUB_REF:10})'/g" jet/__init__.py
         python setup.py sdist
         python -m  twine upload dist/*
