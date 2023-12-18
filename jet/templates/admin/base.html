@@ -68,7 +68,7 @@
             {% endblock %}
             {% block userlinks %}
                 {% if site_url %}
-                    <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+                    <a href="//{{ site_url }}">{% trans 'View site' %}</a> /
                 {% endif %}
                 {% if user.is_active and user.is_staff %}
                     {% url 'django-admindocs-docroot' as docsroot %}
@@ -182,7 +182,7 @@
                         </a>
                     {% endif %}
                     {% if site_url %}
-                        <a href="{{ site_url }}" class="sidebar-link icon">
+                        <a href="//{{ site_url }}" class="sidebar-link icon">
                             <span class="sidebar-link-label">
                                 <span class="sidebar-link-icon icon-open-external"></span>
                                 {% trans 'View site' %}
