@@ -16,9 +16,9 @@ PaginatorUpdater.prototype = {
             if (($node.prev().prop('tagName') == 'A' || $node.prev().prop('tagName') == 'SPAN')
                 && ($node.next().prop('tagName') == 'A' || $node.next().prop('tagName') == 'SPAN')) {
 
-                if ($.trim($node.text()) == '...') {
+                    if ($node.text().trim() == '...' || $node.text().trim() == '…') {
                     $node.wrap($('<span>').addClass('disabled'));
-                } else if ($.trim($node.text()) == '') {
+                } else if ($node.text().trim() == '') {
                     $node.remove();
                 }
             }
