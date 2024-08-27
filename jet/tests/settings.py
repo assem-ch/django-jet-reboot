@@ -17,6 +17,7 @@ INSTALLED_APPS = (
     'jet',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.staticfiles',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
