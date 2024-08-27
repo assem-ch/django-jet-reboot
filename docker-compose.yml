@@ -1,0 +1,8 @@
+version: '3.10'
+
+services:
+  django-jet-build-ui:
+    build:
+      dockerfile: gulp_build_scripts/Dockerfile
+    volumes:
+      - ./:/django-jet-reboot

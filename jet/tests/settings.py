@@ -4,6 +4,7 @@ from django.conf import global_settings
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+SITE_ID=1
 SECRET_KEY = '!DJANGO_JET_TESTS!'
 
 DEBUG = True
