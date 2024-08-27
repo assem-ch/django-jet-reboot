@@ -48,6 +48,10 @@
 <body class="{% if request.COOKIES.sidebar_pinned != 'false' %}menu-pinned {% endif %}{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}"
   data-admin-utc-offset="{% now "Z" %}">
 
+<form id="logout-form" method="post" action="{% url 'admin:logout' %}">
+  {% csrf_token %}
+</form>
+
 <!-- Container -->
 <div id="container">
 
@@ -79,7 +83,7 @@
                 {% if user.has_usable_password %}
                 <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
                 {% endif %}
-                <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+                <a href="#" onclick="document.getElementById('logout-form').submit();">{% trans 'Log out' %}</a>
             {% endblock %}
         </div>
         {% endif %}
