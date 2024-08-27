@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  django-jet-build-ui:
+    build:
+      dockerfile: docker/gulp_build/Dockerfile.build_ui
+    volumes:
+      - ./:/django-jet-reboot
