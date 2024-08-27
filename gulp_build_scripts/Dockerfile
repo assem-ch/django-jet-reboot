@@ -1,12 +1,12 @@
-FROM python:3.9
+FROM python:3.10
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 WORKDIR /startup
-COPY docker/gulp_build/entrypoint.build_ui.sh .
+COPY gulp_build_scripts/entrypoint.sh .
 
 VOLUME /django-jet-reboot
 
-ENTRYPOINT [ "/bin/bash", "entrypoint.build_ui.sh" ]
+ENTRYPOINT [ "/bin/bash", "entrypoint.sh" ]

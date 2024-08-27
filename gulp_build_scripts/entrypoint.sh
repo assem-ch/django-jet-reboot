@@ -22,6 +22,7 @@ nvm install 6.17.1
 echo "Node version: $(node -v)"
 echo "NPM version: $(npm -v)"
 
+npm rebuild node-sass
 # Install the required node packages
 echo "Running npm install"
 npm install

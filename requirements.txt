@@ -1,2 +1,2 @@
-django==5.1
+django==4.2.15
 six
