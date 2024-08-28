@@ -20,6 +20,7 @@ class SearchableTestModel(models.Model):
     field1 = models.CharField(max_length=255)
     field2 = models.IntegerField()
 
+
     def __str__(self):
         return '%s%d' % (self.field1, self.field2)
 

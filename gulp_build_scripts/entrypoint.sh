@@ -17,7 +17,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Install nodejs
-nvm install 6.17.1
+nvm install 10
 
 echo "Node version: $(node -v)"
 echo "NPM version: $(npm -v)"
