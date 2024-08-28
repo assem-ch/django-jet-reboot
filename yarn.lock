@@ -32,10 +32,6 @@ align-text@^0.1.1, align-text@^0.1.3:
     longest "^1.0.1"
     repeat-string "^1.5.2"
 
-almond@~0.3.1:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/almond/-/almond-0.3.3.tgz#a0e7c95ac7624d6417b4494b1e68bff693168a20"
-
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
@@ -149,16 +145,17 @@ atob@~1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-1.1.3.tgz#95f13629b12c3a51a5d215abdce2aa9f32f80773"
 
-autoprefixer@6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.4.0.tgz#4db60af585a303616bb896b50b30bbdd5858d2e3"
+autoprefixer@9.8.8:
+  version "9.8.8"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.8.8.tgz#fd4bd4595385fa6f06599de749a4d5f7a474957a"
   dependencies:
-    browserslist "~1.3.5"
-    caniuse-db "^1.0.30000515"
+    browserslist "^4.12.0"
+    caniuse-lite "^1.0.30001109"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^5.1.1"
-    postcss-value-parser "^3.2.3"
+    picocolors "^0.2.1"
+    postcss "^7.0.32"
+    postcss-value-parser "^4.1.0"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
@@ -353,11 +350,14 @@ browsernizr@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/browsernizr/-/browsernizr-2.1.0.tgz#ac7cbfefe4d0047e577196910b5b0b175bae1613"
 
-browserslist@~1.3.5:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-1.3.6.tgz#952ff48d56463d3b538f85ef2f8eaddfd284b133"
+browserslist@^4.12.0:
+  version "4.23.3"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.23.3.tgz#debb029d3c93ebc97ffbc8d9cbb03403e227c800"
   dependencies:
-    caniuse-db "^1.0.30000525"
+    caniuse-lite "^1.0.30001646"
+    electron-to-chromium "^1.5.4"
+    node-releases "^2.0.18"
+    update-browserslist-db "^1.1.0"
 
 buffer-shims@^1.0.0:
   version "1.0.0"
@@ -412,9 +412,9 @@ camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
-caniuse-db@^1.0.30000515, caniuse-db@^1.0.30000525:
-  version "1.0.30000639"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000639.tgz#5982f70a54352adaf8901a772d2c68ca24f501aa"
+caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001646:
+  version "1.0.30001653"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001653.tgz#b8af452f8f33b1c77f122780a4aecebea0caca56"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -719,6 +719,10 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+electron-to-chromium@^1.5.4:
+  version "1.5.13"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.13.tgz#1abf0410c5344b2b829b7247e031f02810d442e6"
+
 elliptic@^6.0.0:
   version "6.5.7"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.7.tgz#8ec4da2cb2939926a1b9a73619d768207e647c8b"
@@ -746,6 +750,10 @@ error-ex@^1.2.0:
 es6-promise@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.2.1.tgz#ec56233868032909207170c39448e24449dd1fc4"
+
+escalade@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.2.tgz#54076e9ab29ea5bf3d8f1ed62acffbb88272df27"
 
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.3:
   version "1.0.5"
@@ -1512,13 +1520,10 @@ istextorbinary@1.0.2:
     binaryextensions "~1.0.0"
     textextensions "~1.0.0"
 
-jquery-mousewheel@~3.1.13:
-  version "3.1.13"
-  resolved "https://registry.yarnpkg.com/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
-
-"jquery-ui@git://github.com/jquery/jquery-ui#1.11.4":
+"jquery-ui@https://github.com/jquery/jquery-ui#1.11.4":
   version "1.11.4"
-  resolved "git://github.com/jquery/jquery-ui#d6713024e16de90ea71dc0544ba34e1df01b4d8a"
+  uid d6713024e16de90ea71dc0544ba34e1df01b4d8a
+  resolved "https://github.com/jquery/jquery-ui#d6713024e16de90ea71dc0544ba34e1df01b4d8a"
 
 jquery.cookie@1.4.1:
   version "1.4.1"
@@ -1528,7 +1533,11 @@ jquery.mousewheel@3.1.9:
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/jquery.mousewheel/-/jquery.mousewheel-3.1.9.tgz#b1e162f1df8aaf6c24fbf923d3d6c58c52d9553e"
 
-jquery@3.5.0, jquery@>=1.5.1:
+jquery@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-1.11.3.tgz#dd8b74278b27102d29df63eae28308a8cfa1b583"
+
+jquery@>=1.5.1:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
 
@@ -1991,6 +2000,10 @@ node-gyp@^3.3.1:
     tar "^2.0.0"
     which "1"
 
+node-releases@^2.0.18:
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.18.tgz#f010e8d35e2fe8d6b2944f03f70213ecedc4ca3f"
+
 node-sass@^3.4.2:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-3.13.1.tgz#7240fbbff2396304b4223527ed3020589c004fc2"
@@ -2219,14 +2232,22 @@ pbkdf2@^3.0.3:
   dependencies:
     create-hmac "^1.1.2"
 
-"perfect-scrollbar@git://github.com/noraesae/perfect-scrollbar#0.6.14":
-  version "0.0.0"
-  uid "721398fda70afbdf5d5b1b21e2f70d9df6c68383"
-  resolved "git://github.com/noraesae/perfect-scrollbar#721398fda70afbdf5d5b1b21e2f70d9df6c68383"
+"perfect-scrollbar@https://github.com/mdbootstrap/perfect-scrollbar#0.6.14":
+  version "0.6.14"
+  uid ece54fe263659be244ef1b94bef6077b65c372ae
+  resolved "https://github.com/mdbootstrap/perfect-scrollbar#ece54fe263659be244ef1b94bef6077b65c372ae"
 
 performance-now@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
+
+picocolors@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-0.2.1.tgz#570670f793646851d1ba135996962abad587859f"
+
+picocolors@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.1.tgz#a8ad579b571952f0e5d25892de5445bcfe25aaa1"
 
 pify@^2.0.0:
   version "2.3.0"
@@ -2249,11 +2270,11 @@ postcss-pxtorem@3.3.1:
     object-assign "^4.0.1"
     postcss "^5.0.2"
 
-postcss-value-parser@^3.2.3:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
+postcss-value-parser@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
 
-postcss@^5.0.14, postcss@^5.0.2, postcss@^5.1.1:
+postcss@^5.0.14, postcss@^5.0.2:
   version "5.2.16"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.16.tgz#732b3100000f9ff8379a48a53839ed097376ad57"
   dependencies:
@@ -2261,6 +2282,13 @@ postcss@^5.0.14, postcss@^5.0.2, postcss@^5.1.1:
     js-base64 "^2.1.9"
     source-map "^0.5.6"
     supports-color "^3.2.3"
+
+postcss@^7.0.32:
+  version "7.0.39"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.39.tgz#9624375d965630e2e1f2c02a935c82a59cb48309"
+  dependencies:
+    picocolors "^0.2.1"
+    source-map "^0.6.1"
 
 preserve@^0.2.0:
   version "0.2.0"
@@ -2551,12 +2579,9 @@ sass-graph@^2.1.1:
     lodash "^4.0.0"
     yargs "^4.7.1"
 
-select2@4.0.6:
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/select2/-/select2-4.0.6.tgz#88697c96e08b65a5963c2806c1d5eefbceec0a7e"
-  dependencies:
-    almond "~0.3.1"
-    jquery-mousewheel "~3.1.13"
+select2@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/select2/-/select2-4.0.0.tgz#81b461456c77148e7e422eb63bd71ca0b254fce7"
 
 "semver@2 || 3 || 4 || 5", semver@~5.3.0:
   version "5.3.0"
@@ -2633,6 +2658,10 @@ source-map@^0.1.38:
 source-map@^0.5.1, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
+
+source-map@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 sparkles@^1.0.0:
   version "1.0.0"
@@ -2811,9 +2840,10 @@ time-stamp@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-1.0.1.tgz#9f4bd23559c9365966f3302dbba2b07c6b99b151"
 
-"timepicker@git://github.com/geex-arts/timepicker":
+"timepicker@https://github.com/geex-arts/timepicker":
   version "0.3.3"
-  resolved "git://github.com/geex-arts/timepicker#af182e40781fbcc4404547c7949e1610e4e9c184"
+  uid af182e40781fbcc4404547c7949e1610e4e9c184
+  resolved "https://github.com/geex-arts/timepicker#af182e40781fbcc4404547c7949e1610e4e9c184"
   dependencies:
     jquery ">=1.5.1"
 
@@ -2883,6 +2913,13 @@ unc-path-regex@^0.1.0:
 unique-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unique-stream/-/unique-stream-1.0.0.tgz#d59a4a75427447d9aa6c91e70263f8d26a4b104b"
+
+update-browserslist-db@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.1.0.tgz#7ca61c0d8650766090728046e416a8cde682859e"
+  dependencies:
+    escalade "^3.1.2"
+    picocolors "^1.0.1"
 
 urix@^0.1.0, urix@~0.1.0:
   version "0.1.0"
