@@ -4,9 +4,9 @@
 **Note**: More collaborators are needed to maintain the project, feel free to contact `@assem_ch <https://x.com/assem_ch>`_.
 
 
-=======================================
-Django JET Reboot (Django 3.x and 4.x )
-=======================================
+==========================================
+Django JET Reboot (Django 3.x, 4.x,  5.x )
+==========================================
 
 Django Jet Reboot is modern template for Django admin interface with improved functionality. Rebooting the original project : `django-jet <https://github.com/geex-arts/django-jet>`_.
 
