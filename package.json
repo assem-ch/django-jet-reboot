@@ -4,7 +4,7 @@
     "autoprefixer": "6.4.0",
     "browserify": "13.0.1",
     "browsernizr": "2.1.0",
-    "es6-promise": "3.2.1",
+    "es6-promise": "4.2.8",
     "gulp": "3.9.1",
     "gulp-clean-css": "2.0.12",
     "gulp-concat-css": "2.3.0",
