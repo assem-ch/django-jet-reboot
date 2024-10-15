@@ -295,11 +295,13 @@ def get_menu_item_url(url, original_app_list):
         if url_type == 'app':
             return original_app_list[url['app_label']]['url']
         elif url_type == 'model':
+            if url['app_label'] not in original_app_list:
+                return None
             models = dict(map(
                 lambda x: (x['name'], x['url']),
                 original_app_list[url['app_label']]['models']
             ))
-            return models[url['model']]
+            return models.get(url['model'], None)
         elif url_type == 'reverse':
             return reverse(url['name'], args=url.get('args'), kwargs=url.get('kwargs'))
     elif isinstance(url, str):
