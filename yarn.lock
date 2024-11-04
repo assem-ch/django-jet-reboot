@@ -2335,10 +2335,10 @@ pbkdf2@^3.0.3:
   dependencies:
     create-hmac "^1.1.2"
 
-"perfect-scrollbar@https://github.com/mdbootstrap/perfect-scrollbar#0.6.14":
-  version "0.6.14"
-  uid ece54fe263659be244ef1b94bef6077b65c372ae
-  resolved "https://github.com/mdbootstrap/perfect-scrollbar#ece54fe263659be244ef1b94bef6077b65c372ae"
+"perfect-scrollbar@https://github.com/mdbootstrap/perfect-scrollbar#1.5.6":
+  version "1.5.6"
+  uid "48fb8ce6db3d31edf4821424cd34f72e70040d71"
+  resolved "https://github.com/mdbootstrap/perfect-scrollbar#48fb8ce6db3d31edf4821424cd34f72e70040d71"
 
 performance-now@^0.2.0:
   version "0.2.0"
