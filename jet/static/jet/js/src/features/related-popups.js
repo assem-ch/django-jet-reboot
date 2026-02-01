@@ -7,7 +7,7 @@ var RelatedPopups = function() {
 
 RelatedPopups.prototype = {
     updateLinks: function($select) {
-        $select.find('~ .change-related, ~ .delete-related, ~ .add-another').each(function() {
+        $select.find('~ .view-related, ~ .change-related, ~ .delete-related, ~ .add-another').each(function() {
             var $link = $(this);
             var hrefTemplate = $link.data('href-template');
 
@@ -36,7 +36,7 @@ RelatedPopups.prototype = {
 
             self.updateLinks($select);
 
-            $select.find('~ .add-related, ~ .change-related, ~ .delete-related, ~ .add-another').each(function() {
+            $select.find('~ .add-related, ~ .view-related, ~ .change-related, ~ .delete-related, ~ .add-another').each(function() {
                 var $link = $(this);
 
                 $link.on('click', function(e) {
