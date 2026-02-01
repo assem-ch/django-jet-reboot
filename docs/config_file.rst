@@ -12,6 +12,7 @@ making absolutely different themes. This option in fact make Django load differe
 Possible built-in themes are:
 
 * default
+* dark
 * green
 * light-violet
 * light-green
@@ -39,6 +40,11 @@ You can allow your users to change admin panel color scheme. This option will ad
             'theme': 'default', # theme folder name
             'color': '#47bac1', # color of the theme's button in user menu
             'title': 'Default' # theme title
+        },
+        {
+            'theme': 'dark',
+            'color': '#111217',
+            'title': 'Dark'
         },
         {
             'theme': 'green',
