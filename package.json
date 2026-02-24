@@ -2,7 +2,7 @@
   "name": "django-jet-reboot",
   "devDependencies": {
     "autoprefixer": "9.8.8",
-    "browserify": "13.0.1",
+    "browserify": "17.0.1",
     "browsernizr": "2.1.0",
     "es6-promise": "4.2.8",
     "gulp": "3.9.1",
